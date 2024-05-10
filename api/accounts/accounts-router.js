@@ -19,10 +19,9 @@ router.post(
   '/',
   md.checkAccountPayload,
   md.checkAccountNameUnique,
-   (req, res, next) => {
-  // DO YOUR MAGIC
+  (req, res, next) => {
   try{
-
+    res.json('post account')
   }catch(err){
     next(err)
   }
